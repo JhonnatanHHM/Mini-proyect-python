@@ -165,7 +165,7 @@ flowchart TD
 
 # 🧩 Gestión de Clientes
 
-**Como** usuario autenticado (técnico o administrador),  
+**Como** usuario autenticado,  
 **quiero** crear, ver, actualizar y eliminar clientes, además de buscarlos por nombre o mes de vencimiento,  
 **para** mantener un registro organizado y actualizado de los clientes del servicio.
 
@@ -274,7 +274,7 @@ flowchart TD
 
 # 🧩 Gestión de Productos
 
-**Como** usuario autenticado (técnico o administrador),  
+**Como** usuario autenticado,  
 **quiero** crear, ver, actualizar y eliminar productos, además de buscarlos por nombre o rango de precio,  
 **para** mantener un catálogo actualizado de los productos disponibles en el sistema.
 
@@ -385,7 +385,7 @@ flowchart TD
 
 # 🧩 Gestión de Extintores
 
-**Como** usuario autenticado (técnico o administrador),  
+**Como** usuario autenticado,  
 **quiero** crear, ver, actualizar y eliminar extintores, además de buscarlos por tipo o rango de capacidad,  
 **para** mantener un catálogo organizado de extintores disponibles para venta o servicio.
 
@@ -491,7 +491,7 @@ flowchart TD
 
 # 🧩 Gestión de Tickets
 
-**Como** técnico autenticado,  
+**Como** usuario,  
 **quiero** crear tickets que incluyan productos y extintores, ver todos los tickets y filtrarlos por cliente,  
 **para** registrar servicios realizados y tener trazabilidad de ventas por cliente.
 
@@ -602,7 +602,7 @@ flowchart TD
 
 # 🧩 Sincronización de Catálogo en Tickets
 
-**Como** técnico,  
+**Como** usuario,  
 **quiero** que al crear un ticket, los productos y extintores se sincronicen automáticamente con el catálogo,  
 **para** garantizar que el nombre y precio del ticket sean siempre correctos y actualizados.
 

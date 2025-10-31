@@ -37,6 +37,7 @@ Cualquier intento de uso sin estar logueado debe redirigir a la pantalla de inic
 
 ##  📊 Diagrama de flujo
 
+```mermaid
 flowchart TD
     A[Inicio del Sistema] --> B["Pantalla de Bienvenida"]
     
@@ -76,6 +77,7 @@ flowchart TD
     style H fill:#FF9800, color:white
     style J fill:#FF9800, color:white
     style L fill:#FF9800, color:white
+```
 
 | **RF02** | Gestión de usuarios – Crear, actualizar, cambiar contraseña, eliminar cuenta |
 
@@ -104,6 +106,7 @@ flowchart TD
 
 ##  📊 Diagrama de flujo
 
+```mermaid
 flowchart TD
     A[Usuario Logueado] --> B["Menú: Gestión de Usuarios"]
     B --> C{"Seleccione opción"}
@@ -156,6 +159,7 @@ flowchart TD
     style X fill:#FF9800, color:white
     style J fill:#8BC34A, color:white
     style S fill:#8BC34A, color:white
+```
 
 | **RF03** | Gestión de clientes – CRUD completo con búsqueda por nombre y vencimiento |
 
@@ -184,6 +188,7 @@ flowchart TD
 
 ##  📊 Diagrama de flujo
 
+```mermaid
 flowchart TD
     A[Usuario Logueado] --> B["Menú: Gestión de Clientes"]
     B --> C{"Seleccione opción"}
@@ -263,6 +268,7 @@ flowchart TD
     style AA fill:#FF9800, color:white
     style AE fill:#FF9800, color:white
     style AJ fill:#FF9800, color:white
+```
 
 | **RF04** | Gestión de productos – CRUD con búsqueda por nombre y precio |
 
@@ -291,6 +297,7 @@ flowchart TD
 
 ##  📊 Diagrama de flujo
 
+```mermaid
 flowchart TD
     A[Usuario Logueado] --> B["Menú: Gestión de Productos"]
     B --> C{"Seleccione opción"}
@@ -372,6 +379,7 @@ flowchart TD
     style AB fill:#FF9800, color:white
     style AG fill:#FF9800, color:white
     style AL fill:#FF9800, color:white
+```
 
 | **RF05** | Gestión de extintores – CRUD con búsqueda por tipo y capacidad |
 
@@ -400,6 +408,7 @@ flowchart TD
 
 ##  📊 Diagrama de flujo
 
+```mermaid
 flowchart TD
     A[Usuario Logueado] --> B["Menú: Gestión de Extintores"]
     B --> C{"Seleccione opción"}
@@ -476,6 +485,7 @@ flowchart TD
     style Z fill:#FF9800, color:white
     style AD fill:#FF9800, color:white
     style AI fill:#FF9800, color:white
+```
 
 | **RF06** | Gestión de tickets – Crear ticket con productos y extintores, listar, filtrar por cliente |
 
@@ -506,6 +516,7 @@ flowchart TD
 
 ##  📊 Diagrama de flujo
 
+```mermaid
 flowchart TD
     A[Usuario Logueado] --> B["Menú: Gestión de Tickets"]
     B --> C{"Seleccione opción"}
@@ -585,6 +596,7 @@ flowchart TD
     style Z fill:#FF9800, color:white
     style AD fill:#FF9800, color:white
     style AK fill:#FF9800, color:white
+```
 
 | **RF07** | Sincronización de catálogo – Precio y nombre de productos/extintores se toman del catálogo al crear ticket |
 
@@ -605,6 +617,7 @@ flowchart TD
 
 ##  📊 Diagrama de flujo
 
+```mermaid
 flowchart TD
     A[Crear Ticket] --> B["Ingresar código + cantidad"]
     B --> C{"¿Código ingresado?"}
@@ -632,6 +645,7 @@ flowchart TD
     style F fill:#4CAF50, color:white
     style I fill:#4CAF50, color:white
     style L fill:#81C784, color:white
+```
 
 | **RF08** | Validación de datos – Campos obligatorios, formatos, duplicados |
 
@@ -654,6 +668,7 @@ flowchart TD
 
 ##  📊 Diagrama de flujo
 
+```mermaid
 flowchart TD
     A[Usuario ingresa datos] --> B["Aplicar validaciones"]
     
@@ -701,6 +716,7 @@ flowchart TD
     style N fill:#FF9800, color:white
     style P fill:#FF9800, color:white
     style R fill:#FF9800, color:white
+```
 
 | **RF09** | Códigos únicos automáticos – `USR-1`, `CLI-1`, `PRO-1`, `EXT-1`, `TIC-1` |
 
@@ -732,6 +748,7 @@ flowchart TD
 
 ##  📊 Diagrama de flujo
 
+```mermaid
 flowchart TD
     A[Crear Nuevo Registro] --> B["Leer archivo JSON"]
     
@@ -772,6 +789,7 @@ flowchart TD
     style N fill:#E3F2FD
     style O fill:#E3F2FD
     style P fill:#E3F2FD
+```
 
 | **RF10** | Persistencia en JSON – Todos los datos se guardan en archivos `data/*.json` |
 
@@ -805,6 +823,7 @@ flowchart TD
 
 ##  📊 Diagrama de flujo
 
+```mermaid
 flowchart TD
     A[Inicio del Sistema] --> B["Verificar carpeta 'data/'"]
     B --> C{"¿Existe 'data/'?"}
@@ -826,3 +845,4 @@ flowchart TD
     style K fill:#4CAF50, color:white
     style D fill:#FF9800, color:white
     style H fill:#FF9800, color:white
+```

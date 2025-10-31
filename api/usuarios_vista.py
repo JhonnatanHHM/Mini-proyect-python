@@ -46,7 +46,7 @@ class UsuariosVista:
     def login(self):
         print("\n--- INICIAR SESIÓN ---")
         email = input("Email: ").strip()
-        password = input(("Contraseña: ").strip())
+        password = getpass.getpass("Confirmar: ")
         
         try:
             usuario = self.service.login(email, password)
